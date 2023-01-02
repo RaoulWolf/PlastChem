@@ -17,7 +17,7 @@ cpp_a <- do.call(
     lapply(
       cpp_a_split,
       FUN = function(x) {
-        data.frame(
+        res <- data.frame(
           "cpp_a_id" = unique(x$cpp_a_id),
           "cas" = ifelse(cleanventory:::.check_cas(x$cas), x$cas, NA_character_),
           "name_and_synonym" = c(
@@ -26,6 +26,8 @@ cpp_a <- do.call(
           ),
           stringsAsFactors = FALSE
         )
+        res <- unique(res)
+        res
       }
     ),
     make.row.names = FALSE
@@ -63,7 +65,7 @@ cpp_b <- do.call(
     lapply(
       cpp_b_split,
       FUN = function(x) {
-        data.frame(
+        res <- data.frame(
           "cpp_b_id" = unique(x$cpp_b_id),
           "cas" = ifelse(cleanventory:::.check_cas(x$cas), x$cas, NA_character_),
           "name_and_synonym" = c(
@@ -72,6 +74,8 @@ cpp_b <- do.call(
           ),
           stringsAsFactors = FALSE
         )
+        res <- unique(res)
+        res
       }
     ),
     make.row.names = FALSE
