@@ -1,6 +1,12 @@
 .Rproj.user
 .Rhistory
 .RData
+.RProfile
 .Ruserdata
 PlastChem.Rproj
 data/raw/FCCmigex_db/*
+data/clean/FCCmigex_db/*
+data/scripts/FCCmigex.R
+data/clean/*.rds
+renv
+renv.lock
