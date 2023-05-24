@@ -4,9 +4,10 @@
 .RProfile
 .Ruserdata
 PlastChem.Rproj
-data/raw/FCCmigex_db/*
-data/clean/FCCmigex_db/*
-data/scripts/FCCmigex.R
-data/clean/*.rds
-renv
-renv.lock
+data/input/raw/FCCmigex_db/*
+data/input/raw/PlasticMAP_2/*
+data/input/clean/FCCmigex_db/*
+data/input/clean/PlasticMAP_2/*
+data/process/*
+data/scripts/06_FCCmigex_db.R
+data/scripts/08_PlasticMAP_2.R
