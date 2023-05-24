@@ -9,5 +9,5 @@ data/input/raw/PlasticMAP_2/*
 data/input/clean/FCCmigex_db/*
 data/input/clean/PlasticMAP_2/*
 data/process/*
-data/scripts/06_FCCmigex_db.R
-data/scripts/08_PlasticMAP_2.R
+data/scripts/06_FCCmigex_db*
+data/scripts/08_PlasticMAP_2*
